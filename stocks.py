@@ -39,7 +39,7 @@ def risk():
         risk = up/down
         risk = round(risk, 2)
         
-        s = stock + " buy @ " + str(price) + ", target " + str(target) + ", stop loss @ " + str(loss) + ": DS %" + str(down) + ", US: %" + str(up) + ", RR: " + str(risk)
+        s = stock + " buy @ " + str(price) + ", target " + str(target) + ", stop loss @ " + str(loss) + ": Downside Risk: %" + str(down) + ", Upside Potential: %" + str(up) + ", Reward/Risk: " + str(risk)
         file.write(s + "\n\n")
     
     file.close()
